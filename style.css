@@ -1,0 +1,42 @@
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('mca.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.tab-btn.active {
+    background-color: #1e3a8a; /* Blue 900 */
+    color: white;
+}
+
+.leader-img {
+    width: 100%;
+    height: 250px;
+    object-cover: cover;
+    background-color: #e2e8f0;
+}
+#gallery-modal {
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease-in-out;
+}
+
+#modal-images::-webkit-scrollbar {
+    width: 5px;
+}
+
+#modal-images::-webkit-scrollbar-thumb {
+    background: #4a5568;
+    border-radius: 10px;
+}
+footer a {
+    transition: all 0.2s ease-in-out;
+}
+
+footer .fab {
+    font-size: 1.1rem;
+}
+
+/* Subtle divider glow */
+.border-t.border-slate-800 {
+    border-color: rgba(255, 255, 255, 0.05);
+}

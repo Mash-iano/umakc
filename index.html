@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMAKC | United MCA Aspirants Alliance</title>
+    
+    <link rel="icon" type="image" href="umakc1.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-slate-900">
+
+    <nav class="bg-white border-b sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-20">
+        <a href="#" class="flex items-center gap-3">
+            <img src="umakc.png" alt="UMAKC Logo" class="h-14 w-auto"> 
+            <div class="flex flex-col">
+                <span class="font-black text-xl text-blue-900 leading-none">UMAKC</span>
+                <span class="text-[10px] text-red-600 uppercase tracking-widest font-bold">Kiambu County</span>
+            </div>
+        </a>
+
+        <div class="hidden lg:flex space-x-6 font-bold text-sm uppercase items-center">
+            <a href="#about" class="hover:text-red-600 transition">About</a>
+            <a href="#membership" class="hover:text-red-600 transition">Membership</a>
+            <a href="#leadership" class="hover:text-red-600 transition">Leadership</a>
+            <a href="#programs" class="hover:text-red-600 transition">Programs</a>
+            <a href="#funds" class="hover:text-red-600 transition">Funds</a>
+            <a href="#contact" class="bg-blue-900 text-white px-5 py-2 rounded shadow hover:bg-blue-800 transition">Contact</a>
+        </div>
+    </div>
+</nav>
+
+    <header class="hero-section flex items-center justify-center text-center text-white px-4 py-32">
+        <div class="max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-black mb-6">One Voice, One Vision, One Victory.</h1>
+            <p class="text-xl opacity-90 mb-10">United MCA Aspirants Alliance - Kiambu County</p>
+            <a href="#membership" class="bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-full font-bold text-lg transition shadow-lg">Join the Alliance</a>
+        </div>
+    </header>
+    <section id="leadership" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-black uppercase">Leadership Structure</h2>
+                <div class="flex justify-center gap-4 mt-8">
+                    <button onclick="showGroup('exec')" class="tab-btn active px-6 py-2 font-bold bg-white shadow rounded">Executive Council</button>
+                    <button onclick="showGroup('sec')" class="tab-btn px-6 py-2 font-bold bg-white shadow rounded">Secretariat</button>
+                    <button onclick="showGroup('all')" class="tab-btn px-6 py-2 font-bold bg-white shadow rounded">All 50 Members</button>
+                </div>
+            </div>
+            <div id="leadership-display" class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                </div>
+        </div>
+    </section>
+    <section id="membership" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-black text-center mb-16">Membership & Benefits</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-slate-50 p-8 rounded-2xl border-l-8 border-blue-900 shadow-md">
+                    <h3 class="text-2xl font-bold mb-4">Categories & Obligations</h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3"><strong>Full Member:</strong> Active participation in decisions and contributions.</li>
+                        <li class="flex gap-3"><strong>Associate Member:</strong> Supportive individuals/partners.</li>
+                    </ul>
+                    <h4 class="font-bold mt-6 mb-2 text-red-600">Member Obligations:</h4>
+                    <p class="text-gray-600 text-sm italic">Adherence to the UMAKC code of conduct, regular attendance, and ward-level mobilization.</p>
+                </div>
+                <div class="bg-blue-900 text-white p-8 rounded-2xl shadow-md">
+                    <h3 class="text-2xl font-bold mb-4">Benefits of Membership</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><i class="fas fa-check mr-2"></i> Political Party Lobbying & Bargaining Power</li>
+                        <li><i class="fas fa-check mr-2"></i> Visibility Strategies for 2027 Success</li>
+                        <li><i class="fas fa-check mr-2"></i> Direct engagement with County Leaders</li>
+                        <li><i class="fas fa-check mr-2"></i> Strategic Campaign Support Tools</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <section id="programs" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-4xl font-black text-center mb-16">Community Programs</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-6 border rounded-xl hover:shadow-lg transition flex flex-col justify-between">
+                <div>
+                    <i class="fas fa-heartbeat text-red-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Wellness Initiative</h3>
+                    <p class="text-sm text-gray-500 mb-6">Afya Mashinani Caravan & Mental Health Support.</p>
+                </div>
+                <button onclick="openGallery('wellness')" class="w-full py-2 bg-slate-100 hover:bg-red-600 hover:text-white font-bold rounded-lg transition text-sm">
+                    <i class="far fa-images mr-2"></i> View Activity Images
+                </button>
+            </div>
+
+            <div class="p-6 border rounded-xl hover:shadow-lg transition flex flex-col justify-between">
+                <div>
+                    <i class="fas fa-leaf text-green-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Mazingira Safi (MASCA)</h3>
+                    <p class="text-sm text-gray-500 mb-6">Climate Change & Environmental Campaign.</p>
+                </div>
+                <button onclick="openGallery('mazingira')" class="w-full py-2 bg-slate-100 hover:bg-green-600 hover:text-white font-bold rounded-lg transition text-sm">
+                    <i class="far fa-images mr-2"></i> View Activity Images
+                </button>
+            </div>
+
+            <div class="p-6 border rounded-xl hover:shadow-lg transition flex flex-col justify-between">
+                <div>
+                    <i class="fas fa-laptop-code text-blue-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">AI Capacity Building</h3>
+                    <p class="text-sm text-gray-500 mb-6">Technology and Innovation Training.</p>
+                </div>
+                <button onclick="openGallery('ai')" class="w-full py-2 bg-slate-100 hover:bg-blue-900 hover:text-white font-bold rounded-lg transition text-sm">
+                    <i class="far fa-images mr-2"></i> View Activity Images
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="gallery-modal" class="fixed inset-0 z-[100] hidden bg-black bg-opacity-90 flex items-center justify-center p-4">
+    <button onclick="closeGallery()" class="absolute top-6 right-6 text-white text-4xl hover:text-red-500">&times;</button>
+    
+    <div class="max-w-5xl w-full">
+        <h3 id="modal-title" class="text-white text-2xl font-bold mb-6 text-center"></h3>
+        <div id="modal-images" class="grid grid-cols-1 md:grid-cols-3 gap-4 overflow-y-auto max-h-[70vh]">
+            </div>
+    </div>
+</div>
+
+    <section id="funds" class="py-16 bg-blue-50">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-black mb-8">Sources of Funds</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-white p-4 rounded shadow font-bold">Member Contributions</div>
+                <div class="bg-white p-4 rounded shadow font-bold">Donations & Grants</div>
+                <div class="bg-white p-4 rounded shadow font-bold">Political Deals</div>
+            </div>
+        </div>
+    </section>
+
+   <footer id="contact" class="bg-slate-900 text-white pt-20 pb-10">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-12 pb-16">
+            <div>
+                <h4 class="text-2xl font-bold mb-6 flex items-center gap-2">
+                    <i class="fas fa-newspaper text-red-600"></i> Media Center
+                </h4>
+                <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                    Stay updated with the latest press releases, upcoming alliance events, and grassroots stories from across the 60 wards of Kiambu.
+                </p>
+                <div class="flex gap-4 text-2xl">
+    <a href="https://www.facebook.com/your-page-link" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 transition duration-300">
+        <i class="fab fa-facebook-f text-sm"></i>
+    </a>
+    
+    <a href="https://x.com/your-profile-link" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-400 transition duration-300">
+        <i class="fab fa-twitter text-sm"></i>
+    </a>
+    
+    <a href="https://www.instagram.com/your-profile-link" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-pink-600 transition duration-300">
+        <i class="fab fa-instagram text-sm"></i>
+    </a>
+    
+    <a href="https://www.tiktok.com/@your-profile-link" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-black transition duration-300">
+        <i class="fab fa-tiktok text-sm"></i>
+    </a>
+</div>
+            </div>
+
+            <div>
+                <h4 class="text-2xl font-bold mb-6">Quick Links</h4>
+                <ul class="text-gray-400 space-y-3 text-sm font-medium">
+                    <li><a href="#membership" class="hover:text-red-500 transition">Membership Categories</a></li>
+                    <li><a href="#leadership" class="hover:text-red-500 transition">Leadership Structure</a></li>
+                    <li><a href="#programs" class="hover:text-red-500 transition">Community Initiatives</a></li>
+                    <li><a href="#funds" class="hover:text-red-500 transition">Sources of Funds</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-2xl font-bold mb-6">Contact Us</h4>
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-envelope text-red-600 mt-1"></i>
+                        <p class="text-gray-400 text-sm">umakcounty@gmail.com</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-phone-alt text-red-600 mt-1"></i>
+                        <div class="text-gray-400 text-sm">
+                            <p>0798 852 371</p>
+                            <p>0103 932 477</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-map-marker-alt text-red-600 mt-1"></i>
+                        <p class="text-gray-400 text-sm italic">Address: 55760-00200, Nairobi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-gray-500 text-xs">
+                &copy; 2026 United MCA Aspirants Alliance - Kiambu County (UMAKC). All Rights Reserved.
+            </p>
+            <p class="text-gray-500 text-xs font-medium">
+                Made with ❤️ by <span class="text-white hover:text-red-500 transition cursor-pointer">Blessed Solutions</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
