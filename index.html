@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UMAKC | United MCA Aspirants Alliance</title>
     
-    <link rel="icon" type="image" href="umakc1.png">
+    <link rel="icon" type="image" href="images/umakc1.png">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -16,7 +16,7 @@
     <nav class="bg-white border-b sticky top-0 z-50 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-20">
         <a href="#" class="flex items-center gap-3">
-            <img src="umakc.png" alt="UMAKC Logo" class="h-14 w-auto"> 
+            <img src="images/umakc.png" alt="UMAKC Logo" class="h-14 w-auto"> 
             <div class="flex flex-col">
                 <span class="font-black text-xl text-blue-900 leading-none">UMAKC</span>
                 <span class="text-[10px] text-red-600 uppercase tracking-widest font-bold">Kiambu County</span>
@@ -34,7 +34,7 @@
     </div>
 </nav>
 
-    <header class="hero-section flex items-center justify-center text-center text-white px-4 py-32">
+    <header class="hero-section flex items-center justify-center text-center text-white px-4 py-32" id="about" class="py-20 bg-slate-100">
         <div class="max-w-4xl">
             <h1 class="text-5xl md:text-7xl font-black mb-6">One Voice, One Vision, One Victory.</h1>
             <p class="text-xl opacity-90 mb-10">United MCA Aspirants Alliance - Kiambu County</p>
@@ -46,9 +46,9 @@
             <div class="text-center mb-10">
                 <h2 class="text-4xl font-black uppercase">Leadership Structure</h2>
                 <div class="flex justify-center gap-4 mt-8">
-                    <button onclick="showGroup('exec')" class="tab-btn active px-6 py-2 font-bold bg-white shadow rounded">Executive Council</button>
-                    <button onclick="showGroup('sec')" class="tab-btn px-6 py-2 font-bold bg-white shadow rounded">Secretariat</button>
-                    <button onclick="showGroup('all')" class="tab-btn px-6 py-2 font-bold bg-white shadow rounded">All 50 Members</button>
+                    <button onclick="showGroup('exec', event)" data-group="exec" class="tab-btn active px-6 py-2 font-bold bg-white shadow rounded">Executive Council</button>
+                    <button onclick="showGroup('sec', event)" data-group="sec" class="tab-btn px-6 py-2 font-bold bg-white shadow rounded">Secretariat</button>
+                    <button onclick="showGroup('all', event)" data-group="all" class="tab-btn px-6 py-2 font-bold bg-white shadow rounded">All 50 Members</button>
                 </div>
             </div>
             <div id="leadership-display" class="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -260,13 +260,17 @@
             <p class="text-gray-500 text-xs">
                 &copy; 2026 United MCA Aspirants Alliance - Kiambu County (UMAKC). All Rights Reserved.
             </p>
-            <p class="text-gray-500 text-xs font-medium">
-                Made with ❤️ by <span class="text-white hover:text-red-500 transition cursor-pointer">Blessed Solutions</span>
-            </p>
+           <p class="text-gray-500 text-xs font-medium">
+              Made with ❤️ by 
+             <a href="mailto:blessedsolutionsconsultancy@gmail.com" class="text-white hover:text-red-500 transition cursor-pointer font-bold underline decoration-red-600 underline-offset-4">
+              Blessed Solutions
+             </a>
+          </p>
         </div>
     </div>
 </footer>
-
+ 
     <script src="script.js"></script>
+   
 </body>
 </html>
