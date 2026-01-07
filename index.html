@@ -20,12 +20,15 @@
             <div class="flex flex-col">
                 <span class="font-black text-xl text-blue-900 leading-none">UMAKC</span>
                 <span class="text-[10px] text-red-600 uppercase tracking-widest font-bold">Kiambu County</span>
+                <button id="menu-btn" class="lg:hidden text-blue-900 text-2xl p-2 focus:outline-none">
+                  <i class="fas fa-bars"></i>
+                </button>
             </div>
         </a>
 
         <div class="hidden lg:flex space-x-6 font-bold text-sm uppercase items-center">
             <a href="#about" class="hover:text-red-600 transition">About</a>
-             <a href="#leadership" class="hover:text-red-600 transition">Leadership</a>
+            <a href="#leadership" class="hover:text-red-600 transition">Leadership</a>
             <a href="#membership" class="hover:text-red-600 transition">Membership</a>
             <a href="#programs" class="hover:text-red-600 transition">Programs</a>
             <a href="#funds" class="hover:text-red-600 transition">Support the Alliance</a>
@@ -33,6 +36,14 @@
         </div>
     </div>
 </nav>
+<div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-gray-100 flex-col p-4 space-y-4 font-bold  uppercase text-sm shadow-lg">
+    <a href="#about" class="block hover:text-red-600">About</a>
+    <a href="#leadership" class="block hover:text-red-600">Leadership</a>
+    <a href="#membership" class="block hover:text-red-600">Membership</a>
+    <a href="#programs" class="block hover:text-red-600">Programs</a>
+    <a href="#funds" class="block hover:text-red-600">Support</a>
+    <a href="#contact" class="block bg-blue-900 text-white px-5 py-2 rounded text-center">Contact</a>
+</div>
 
     <header class="hero-section flex items-center justify-center text-center text-white px-4 py-32" id="about" class="py-20 bg-slate-100">
         <div class="max-w-4xl">
