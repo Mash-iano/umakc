@@ -1,5 +1,5 @@
 <?php
-// send_email.php
+/*// send_email.php
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // 1. Collect and sanitize input from the form
@@ -36,4 +36,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header("Location: index.php");
     exit;
 }
-?>
+?>*/
