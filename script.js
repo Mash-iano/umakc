@@ -5,17 +5,20 @@ const leaders = {
         { name: "Hon.Fredrick Njugua", role: "Vice-Chairperson", img: "fredrick.jpg" },
         { name: "Hon.Mung'ara Muragu", role: "Treasurer", img: "mung'ara.jpg" },
         { name: "Hon.Mbugua Wanyoike", role: "Secretary General", img: "MBUGUASG.jpg" },
-        { name: "Deputy Secretary General", role: "Executive Council", img: "placeholder.jpg" },
+        { name: "Hon.Virginia Mwaura", role: "Deputy Secretary General", img: "viginia.jpg" },
         { name: "Hon.Gatheca Kimani", role: "Organizing Secretary", img: "gatheca.jpg" },
         { name: "Hon.Michael Ndung'u", role: "Deputy Organizing Secretary", img: "michael.jpg" },
         { name: "Hon.Patrick Mwangi", role: "Coordinator", img: "patrick.jpg" },
-        { name: "Deputy Coordinator", role: "Executive Council", img: "placeholder.jpg" },
+        { name: "Hon.Michael Gitere", role: "Deputy Coordinator", img: "gitere.jpg" },
         { name: "Chief Whip", role: "Executive Council", img: "placeholder.jpg" },
-        { name: "Hon.Ezekiel Ng'ang'a", role: "Chaplain", img: "ezekiel.jpg" }
+        { name: "Hon.Ezekiel Ng'ang'a", role: "Chaplain", img: "ezekiel.jpg" },
+         { name: "Hon.Joshua Gichana", role: "Head of Programs", img: "gichana.jpg" },
+          { name: "Veronicah Wambui", role: "Business Community Representative", img: "veronicah.jpg" }
     ],
     sec: [
         { name: "Peter Wanjiru", role: "Youth League President", img: "peter.jpg" },
-        { name: "Calpha Wanjiru", role: "Youth League Vice President", img: "calpha.jpg" },
+        { name: "Calpha Wanjiru", role: "Youth League Vice President(operations)", img: "calpha.jpg" },
+        { name: "Stephen Kibue", role: "Youth League Vice President(Strategy and Planning)", img: "kibue.jpg" },
         { name: "Shadrack Mwangi", role: "Youth League Secretary", img: "shadrack.jpg" },
         { name: "Ian Macharia", role: "Director of ICT", img: "ian.png" },
         { name: "Stephen Njambi", role: "Director of Digital Media And Public Relations", img: "stephen.jpg" }
@@ -123,19 +126,27 @@ window.onclick = function(event) {
         closeGallery();
     }
 };
-// Initialize view
-window.onload = () => showGroup('exec');
+// Initialize view - CHANGED: No longer calls showGroup, so it starts hidden
+window.onload = () => {
+    console.log("UMAKC Website Loaded - Leadership hidden by default");
+};
+
+// Mobile Menu Logic
 const menuBtn = document.getElementById('menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
 
-menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-    mobileMenu.classList.toggle('flex');
-});
+// Safety check to ensure button exists before adding listener
+if (menuBtn) {
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('flex');
+    });
+}
 
 // Close menu when a link is clicked
 document.querySelectorAll('#mobile-menu a').forEach(link => {
     link.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('flex'); // Ensure flex is removed when hiding
     });
 });
