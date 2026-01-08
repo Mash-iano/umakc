@@ -268,7 +268,15 @@
                 </div>
             </div>
         </div>
-
+             <div class="mt-10 bg-slate-800 p-6 rounded-xl">
+    <h4 class="text-white font-bold mb-4">Send us a Message</h4>
+    <form action="send_email.php" method="POST" class="space-y-4">
+        <input type="text" name="name" placeholder="Your Name" class="w-full p-2 rounded bg-slate-700 text-white border border-slate-600 focus:outline-none focus:border-red-500" required>
+        <input type="email" name="email" placeholder="Your Email" class="w-full p-2 rounded bg-slate-700 text-white border border-slate-600 focus:outline-none focus:border-red-500" required>
+        <textarea name="message" placeholder="Your Message" rows="3" class="w-full p-2 rounded bg-slate-700 text-white border border-slate-600 focus:outline-none focus:border-red-500" required></textarea>
+        <button type="submit" class="bg-red-600 text-white px-6 py-2 rounded font-bold hover:bg-red-700 transition w-full">Send Message</button>
+    </form>
+</div>
         <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <p class="text-gray-500 text-xs">
                 &copy; 2026 United MCA Aspirants Alliance - Kiambu County (UMAKC). All Rights Reserved.
