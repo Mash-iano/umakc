@@ -10,7 +10,7 @@ const leaders = {
         { name: "Hon.Michael Ndung'u", role: "Deputy Organizing Secretary", img: "michael.jpg" },
         { name: "Hon.Patrick Mwangi", role: "Coordinator", img: "patrick.jpg" },
         { name: "Hon.Michael Gitere", role: "Deputy Coordinator", img: "gitere.jpg" },
-        { name: "Chief Whip", role: "Executive Council", img: "placeholder.jpg" },
+        { name: "Hon.Tony Njueni", role: "Chief Whip", img: "tony.jpg" },
         { name: "Hon.Ezekiel Ng'ang'a", role: "Chaplain", img: "ezekiel.jpg" },
          { name: "Hon.Joshua Gichana", role: "Head of Programs", img: "gichana.jpg" },
           { name: "Veronicah Wambui", role: "Business Community Representative", img: "veronicah.jpg" }
