@@ -190,84 +190,130 @@
 
 
 
-  <section id="programs" class="py-20 bg-white">
-
+<section id="programs" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4">
-
         <h2 class="text-4xl font-black text-center mb-16">Community Programs</h2>
 
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-            <div class="p-6 border rounded-xl hover:shadow-lg transition flex flex-col justify-between">
-
+            <div class="p-6 border rounded-xl hover:shadow-lg transition flex flex-col justify-between border-t-4 border-t-red-600">
                 <div>
-
                     <i class="fas fa-heartbeat text-red-600 text-3xl mb-4"></i>
-
                     <h3 class="text-xl font-bold mb-2">Wellness Initiative</h3>
-
-                    <p class="text-sm text-gray-500 mb-6">Afya Mashinani Caravan & Mental Health Support.</p>
-
+                    <p class="text-xs text-gray-600 mb-6">Promoting quality healthcare and mental resilience through AMC and MHPSS across Kiambu.</p>
                 </div>
-
-                <button onclick="openGallery('wellness')" class="w-full py-2 bg-slate-100 hover:bg-red-600 hover:text-white font-bold rounded-lg transition text-sm">
-
-                    <i class="far fa-images mr-2"></i> View Activity Images
-
-                </button>
-
+                <div>
+                    <select onchange="if(this.value) openGallery(this.value)" class="w-full p-2 mb-2 text-sm border rounded-lg bg-gray-50 outline-none focus:ring-2 focus:ring-red-600">
+                        <option value="">Select Photo Gallery</option>
+                        <option value="amc">Afya Mashinani Caravan</option>
+                        <option value="mhpss">Mental Health Support</option>
+                    </select>
+                </div>
             </div>
 
-
-
-            <div class="p-6 border rounded-xl hover:shadow-lg transition flex flex-col justify-between">
-
+            <div class="p-6 border rounded-xl hover:shadow-lg transition flex flex-col justify-between border-t-4 border-t-purple-600">
                 <div>
+                    <i class="fas fa-palette text-purple-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Talents & Arts</h3>
+                    <p class="text-xs text-gray-600 mb-6">Empowering youth-led creative MSMEs as drivers of inclusive economic growth.</p>
+                </div>
+                <div>
+                    <select onchange="if(this.value) openGallery(this.value)" class="w-full p-2 mb-2 text-sm border rounded-lg bg-gray-50 outline-none focus:ring-2 focus:ring-purple-600">
+                        <option value="">Select Photo Gallery</option>
+                        <option value="tcae">Creative Arts Expo (TCAE)</option>
+                    </select>
+                </div>
+            </div>
 
+            <div class="p-6 border rounded-xl hover:shadow-lg transition flex flex-col justify-between border-t-4 border-t-green-600">
+                <div>
                     <i class="fas fa-leaf text-green-600 text-3xl mb-4"></i>
-
-                    <h3 class="text-xl font-bold mb-2">Mazingira Safi (MASCA)</h3>
-
-                    <p class="text-sm text-gray-500 mb-6">Climate Change & Environmental Campaign.</p>
-
+                    <h3 class="text-xl font-bold mb-2">Mazingira Safi</h3>
+                    <p class="text-xs text-gray-600 mb-6">Grassroots climate action, waste management, and ecosystem restoration.</p>
                 </div>
-
-                <button onclick="openGallery('mazingira')" class="w-full py-2 bg-slate-100 hover:bg-green-600 hover:text-white font-bold rounded-lg transition text-sm">
-
-                    <i class="far fa-images mr-2"></i> View Activity Images
-
-                </button>
-
+                <div>
+                    <select onchange="if(this.value) openGallery(this.value)" class="w-full p-2 mb-2 text-sm border rounded-lg bg-gray-50 outline-none focus:ring-2 focus:ring-green-600">
+                        <option value="">Select Photo Gallery</option>
+                        <option value="masca-cleanups">Community Clean-ups</option>
+                        <option value="masca-trees">Ecosystem Restoration</option>
+                    </select>
+                </div>
             </div>
 
-
-
-            <div class="p-6 border rounded-xl hover:shadow-lg transition flex flex-col justify-between">
-
+            <div class="p-6 border rounded-xl hover:shadow-lg transition flex flex-col justify-between border-t-4 border-t-blue-600">
                 <div>
-
-                    <i class="fas fa-laptop-code text-blue-600 text-3xl mb-4"></i>
-
-                    <h3 class="text-xl font-bold mb-2">AI Capacity Building</h3>
-
-                    <p class="text-sm text-gray-500 mb-6">Technology and Innovation Training.</p>
-
+                    <i class="fas fa-robot text-blue-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">AI & Innovation</h3>
+                    <p class="text-xs text-gray-600 mb-6">Building AI literacy to enhance employability and entrepreneurship for youth.</p>
                 </div>
+                <div>
+                    <select onchange="if(this.value) openGallery(this.value)" class="w-full p-2 mb-2 text-sm border rounded-lg bg-gray-50 outline-none focus:ring-2 focus:ring-blue-600">
+                        <option value="">Select Photo Gallery</option>
+                        <option value="ai-training">AI Capacity Building</option>
+                    </select>
+                </div>
+            </div>
 
-                <button onclick="openGallery('ai')" class="w-full py-2 bg-slate-100 hover:bg-blue-900 hover:text-white font-bold rounded-lg transition text-sm">
+            <div class="p-6 border rounded-xl hover:shadow-lg transition flex flex-col justify-between border-t-4 border-t-orange-500">
+                <div>
+                    <i class="fas fa-running text-orange-500 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Sports & Athletics</h3>
+                    <p class="text-xs text-gray-600 mb-6">Commercializing community sports and creating career opportunities for youth.</p>
+                </div>
+                <div>
+                    <select onchange="if(this.value) openGallery(this.value)" class="w-full p-2 mb-2 text-sm border rounded-lg bg-gray-50 outline-none focus:ring-2 focus:ring-orange-500">
+                        <option value="">Select Photo Gallery</option>
+                        <option value="cose-football">Football Leagues</option>
+                        <option value="cose-athletics">Athletics Expo</option>
+                    </select>
+                </div>
+            </div>
 
-                    <i class="far fa-images mr-2"></i> View Activity Images
+            <div class="p-6 border rounded-xl hover:shadow-lg transition flex flex-col justify-between border-t-4 border-t-amber-700">
+                <div>
+                    <i class="fas fa-seedling text-amber-700 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Agribusiness</h3>
+                    <p class="text-xs text-gray-600 mb-6">Mentorship and market-oriented support for agribusiness MSMEs.</p>
+                </div>
+                <div>
+                    <select onchange="if(this.value) openGallery(this.value)" class="w-full p-2 mb-2 text-sm border rounded-lg bg-gray-50 outline-none focus:ring-2 focus:ring-amber-700">
+                        <option value="">Select Photo Gallery</option>
+                        <option value="agri-mentorship">Mentorship Sessions</option>
+                    </select>
+                </div>
+            </div>
 
-                </button>
+            <div class="p-6 border rounded-xl hover:shadow-lg transition flex flex-col justify-between border-t-4 border-t-indigo-600">
+                <div>
+                    <i class="fas fa-user-graduate text-indigo-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Education (CBE)</h3>
+                    <p class="text-xs text-gray-600 mb-6">Empowering parents to support their children in Competency-Based Education.</p>
+                </div>
+                <div>
+                    <select onchange="if(this.value) openGallery(this.value)" class="w-full p-2 mb-2 text-sm border rounded-lg bg-gray-50 outline-none focus:ring-2 focus:ring-indigo-600">
+                        <option value="">Select Photo Gallery</option>
+                        <option value="cbe-sensitization">Parental Campaigns</option>
+                    </select>
+                </div>
+            </div>
 
+            <div class="p-6 border rounded-xl hover:shadow-lg transition flex flex-col justify-between border-t-4 border-t-pink-500">
+                <div>
+                    <i class="fas fa-hand-holding-heart text-pink-500 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Charity Initiative</h3>
+                    <p class="text-xs text-gray-600 mb-6">Cultivating generosity to provide relief and hope to those in need.</p>
+                </div>
+                <div>
+                    <select onchange="if(this.value) openGallery(this.value)" class="w-full p-2 mb-2 text-sm border rounded-lg bg-gray-50 outline-none focus:ring-2 focus:ring-pink-500">
+                        <option value="">Select Photo Gallery</option>
+                        <option value="charity-outreach">Relief Outreach</option>
+                    </select>
+                </div>
             </div>
 
         </div>
-
     </div>
-
 </section>
-
 
 
 <div id="gallery-modal" class="fixed inset-0 z-[100] hidden bg-black bg-opacity-90 flex items-center justify-center p-4">
